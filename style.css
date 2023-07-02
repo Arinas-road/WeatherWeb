@@ -1,0 +1,233 @@
+body{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Rubik One', sans-serif;
+}
+
+.loading{
+   position: fixed;
+   display: none;
+   align-items: center;
+   justify-content: space-around;
+   z-index: 1000;
+   background: #136084;
+   width: 100%;
+   height: 100%;
+}
+.loading h1{
+   width: fit-content;
+   font-size: 5em;
+   position: relative;
+   color: #fff;
+}
+.ball{
+   position: relative;
+   width: 5vw;
+   height: 5vw;
+   background-color: rgb(255, 255, 255);
+   border-radius: 50%;
+   animation: jump 1s ease-in-out infinite;
+}
+
+.weather-api{
+   display: none;
+}
+
+
+.before-loading{
+   background-color:  #0d3e54;
+   width: 50vw;
+   height: 20vh;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   box-shadow: 0 0 10px #fff;
+   bottom: 50px;
+}
+.before-loading p{
+   width: fit-content;
+
+   position: relative;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   color: #fff;
+   font-size: 3.5vw;
+}
+
+
+.main-container{
+   width: 100vw;
+   min-height: 100vh;
+   position: absolute;
+   top: 0;
+}
+.background-container{
+   z-index: 1;
+   height: 100%;
+   min-height: 100vh;
+   width: 100%;
+   background-size: contain;
+   background-position: top center;
+   
+   background: url('./img/sky.jpg') 0 0/ 100% 100%  no-repeat;
+}
+.title-container{
+   position: relative;
+   top: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 80vw;
+   height: fit-content;
+   padding: 30px 0;
+}
+.title-container p{
+   background: linear-gradient(25deg, rgb(76, 0, 255) 0% ,  rgb(0, 255, 187) 50%, blue 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: orange;
+   font-size: 10vw;
+   font-family: 'Rubik One', sans-serif;
+   font-weight: 700;
+
+}
+.searcher-container{
+   position: relative;
+   width: 100%;
+   height: 5vw;
+   top: 5vw;
+   display: flex;
+ align-items: center;
+ justify-content: space-around;
+
+   
+}
+.searcher-container img{
+   position: absolute;
+   height: 5vw;
+   width: 5vw;
+   right: 1vw;
+}
+.searcher-container p{
+   position: absolute;
+   right:7vw;
+   font-size: 5vh;
+}
+.searcher-container input{
+   position: absolute;
+   z-index: 100;
+   height: 5vw;
+   width: 40vw;
+   font-size: 30px;
+   border-radius: 50px;
+   left: 20px;
+   border: 1px solid #000;
+   box-shadow: 0px 0px 10px #000;
+}
+.searcher-container button{
+   z-index: 100;
+   border: 2px solid #ffffff00;
+   width: 5vw;
+   height: 5vw;
+   background: url('img/search.png') 45% 50%/ 65% 70% no-repeat;
+   background-color: #ffffffa2;
+   border-radius: 50%;
+   box-shadow: 0 0 7px #fff;
+}
+.searcher-container button:hover{
+   box-shadow: none;
+   border: 2px solid #fff;
+}
+
+
+.icon-container{
+   position: relative;
+   height: 50vw;
+   width: 50vw;
+   bottom: 15px;
+   left: 50%;
+   transform: translateX(-50%);
+
+
+}
+.icon-container img{
+   object-fit: contain;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+.info-container{
+   background-color: #136084;
+   position: relative;
+   width: 80%;
+   height: fit-content;
+   bottom: 50px;
+   left: 50%;
+   transform: translate(-50%, 0%);
+   border: 2px solid #136084;
+   box-shadow: 0 0 10px #136084;
+}
+.country{
+   position: relative;
+   width: 100%;
+   height: 15%;
+
+}
+.city-container{
+   position: relative;
+   font-size: 5.5vh;
+   color: #fff;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, 0);
+   width: fit-content;
+
+}
+.infos{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.info{
+   position: relative;
+   font-size: 3vw;
+   margin-right: 3.5vw;
+   width: 6.5em;
+   color: #fff;
+}
+.cont{
+
+   position: relative;
+}
+.icon{
+   position: relative;
+   width: 100%;
+   height: 70%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.weather-image{
+   position: relative;
+}
+
+@keyframes jump{
+   0%{
+      bottom: 0;
+   }
+   25%{
+      bottom: 10vh;
+   }
+   50%{
+      bottom: 15vh;
+   }
+   75%{
+      bottom: 10vh;
+   }
+   100%{
+      bottom: 0;
+   }
+}

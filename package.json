@@ -1,0 +1,18 @@
+{
+  "name": "weathersite",
+  "version": "1.0.0",
+  "description": "created this to practise getting data from api. April 2023.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arinas-road/WeatherWeb.git"
+  },
+  "keywords": [
+    "WetherWeb"
+  ],
+  "author": "Arina Lukasheva",
+  "license": "ISC"
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="img/weather.png"/>
+   <title>Weather</title>
+</head>
+<body>
+   <div class="loading">
+      <h1>LOADING</h1>
+      <div class="ball"></div>
+   </div>
+   <div class="main-container">
+      
+      <div class="background-container">
+         <div class="searcher-container">
+            <input class="input-city" type="text" />
+            <button class="find-button"></button>
+            <p>weather</p>
+            <img src="img/weather.png" alt="">
+         </div>
+         <div class="title-container">
+            <p>Weather Where? Here!</p>
+         </div>
+         <div class="before-loading">
+            <p>Here you'll see weather info</p>
+         </div>
+         <div class="weather-api">
+            
+            <div class="info-container">
+               <div class="country">
+                  <div class="city-container">
+                     <p class="city-name">City: Los Angeles</p>
+                  </div>
+               </div>
+
+                  <div class="icon-container">
+                     <img class="weather-image" src="img/Rain.png" alt="">
+                  </div>
+
+               <div class="infos">
+                  <div class="temperature info">
+                     <p class="tem">temp: 22C</p>
+                  </div>
+                  <div class="wind info">
+                     <p class="win">wind: 10m/s</p>
+                  </div>
+                  <div class="humidity info">
+                     <p class="hum">humidity: 60%</p>
+                  </div>
+               </div>
+            </div>
+      </div>
+
+      </div>
+      
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
